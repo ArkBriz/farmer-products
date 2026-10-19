@@ -1,0 +1,48 @@
+.about {
+  background-color: #D8ECFE;
+}
+
+.about .container {
+  position: relative;
+  padding: 180px 90px;
+}
+
+.about .container::before {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 77px;
+  right: 90px;
+  width: 446px;
+  height: 446px;
+  border-radius: 50%;
+  background-color: #C4E2FF;
+  z-index: 1;
+}
+
+.about .container::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: -64px;
+  right: 177px;
+  width: 273px;
+  height: 627px;
+  background-image: url('../../../assets/image/about-image.png');
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.about__wrapper {
+  position: relative;
+  z-index: 10;
+  width: 540px;
+}
+
+.about .title {
+  margin-bottom: 24px;
+}
+
+.about__text {
+  margin: 0;
+}

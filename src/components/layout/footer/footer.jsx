@@ -5,8 +5,10 @@ import './style.css';
 function Footer() {
   return (
     <footer className="footer">
-      <Logo />
-      <span className="footer__copyright">Создано 2021</span>
+      <div className="container">
+        <Logo />
+        <span className="footer__copyright">Создано 2021</span>
+      </div>
     </footer>
   );
 }
