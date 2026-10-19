@@ -22,6 +22,11 @@ function CardLabel({type}) {
         bgColor: "#F75531",
       };
       break;
+    default:
+      options = {
+        text: "",
+        bgColor: "transparent",
+      }
   }
 
   return options.text ? (
