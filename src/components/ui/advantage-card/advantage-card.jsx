@@ -1,13 +1,14 @@
 import React from "react";
-import Title, {TitleSize} from './title';
+import Title, {TitleSize} from '../title/title';
+import CardLabel from '../card-label/card-label';
 import './style.css';
 
-function AdvantageCard({title, text, image}) {
+function AdvantageCard({title, text, image, type}) {
   return (
     <article className="advantage-card">
       <Title as="h3" size={TitleSize.SMALL}>{title}</Title>
       <p className="advantage-card__text">{text}</p>
-      <span className="advantage-card__label">Продукты</span>
+      <CardLabel className="advantage-card__label" type={type} />
       <img 
         className="advantage-card__img" 
         src={image} 

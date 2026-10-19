@@ -3,12 +3,12 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 import Main from "../main/main";
 
-function PageWrapper() {
+function PageWrapper(props) {
   return (
     <>
       <Header />
       <main className="page-wrapper__main">
-        <Main />
+        <Main {...props}/>
       </main>
       <Footer />
     </>
