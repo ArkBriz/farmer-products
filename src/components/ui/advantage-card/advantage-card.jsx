@@ -8,7 +8,7 @@ function AdvantageCard({title, text, image, type}) {
     <article className="advantage-card">
       <Title as="h3" size={TitleSize.SMALL}>{title}</Title>
       <p className="advantage-card__text">{text}</p>
-      <CardLabel className="advantage-card__label" type={type} />
+      <CardLabel type={type} />
       <img 
         className="advantage-card__img" 
         src={image} 
